@@ -163,4 +163,86 @@
           </div>
           <div class="stack">
             <button class="btn primary" onclick="prefillAndScroll('бетон')">Заказать</button>
-            <button class="btn" onclick="navigator.clipboard.writeText('Расчёт скопирован')">Скопир
+            <button class="btn" onclick="navigator.clipboard.writeText('Расчёт скопирован')">Скопировать</button>
+          </div>
+          <p class="mini">* Калькулятор справочный. Уточняйте у менеджера.</p>
+        </div>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=1200&auto=format&fit=crop" alt="Бетононасос"></div>
+          <div class="grid cols-2" style="margin-top:12px">
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1621905252491-72a5fc80b9a2?q=80&w=1200&auto=format&fit=crop" alt="Кран 25 т"></div>
+            <div class="img-frame"><img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?q=80&w=1200&auto=format&fit=crop" alt="Самосвал 20 м³"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Прайсы -->
+  <section class="section" id="rent">
+    <div class="container">
+      <h2 class="reveal">Аренда спецтехники</h2>
+      <table class="table reveal">
+        <thead><tr><th>Техника</th><th>Ставка</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Миксер (10 м³)</td><td>25 000 ֏ / рейс</td><td><button class="btn" onclick="prefillAndScroll('аренда миксера')">Забронировать</button></td></tr>
+          <tr><td>Бетононасос</td><td>2 500 ֏/м³ (мин. 80 000 ֏)</td><td><button class="btn" onclick="prefillAndScroll('бетононасос')">Забронировать</button></td></tr>
+          <tr><td>Кран 25 т</td><td>120 000 ֏ / день</td><td><button class="btn" onclick="prefillAndScroll('кран 25 т')">Забронировать</button></td></tr>
+          <tr><td>Самосвал 20 м³</td><td>30 000 ֏ / рейс</td><td><button class="btn" onclick="prefillAndScroll('самосвал 20 м³')">Забронировать</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section" id="materials">
+    <div class="container">
+      <h2 class="reveal">Инертные материалы</h2>
+      <table class="table reveal">
+        <thead><tr><th>Материал</th><th>Цена</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Щебень базальтовый</td><td>5 400 ֏/м³</td><td><button class="btn" onclick="prefillAndScroll('щебень базальт')">Заказать</button></td></tr>
+          <tr><td>Базальтовая пыль</td><td>4 500 ֏/м³</td><td><button class="btn" onclick="prefillAndScroll('базальтовая пыль')">Заказать</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section" id="contacts">
+    <div class="container">
+      <h2 class="reveal">Контакты</h2>
+      <div class="grid cols-2">
+        <div class="card reveal">
+          <p><strong>ООО «Метта Груп»</strong></p>
+          <p class="muted">Строительство, продажа бетона, аренда спецтехники, инертные материалы.</p>
+          <p>Тел.: <a id="telText2" href="tel:+374XXXXXXXXX">+374 XX XXX XX XX</a></p>
+          <p class="stack">
+            <a id="waLink" class="btn" href="#">WhatsApp</a>
+            <a id="tgLink" class="btn" href="#">Telegram</a>
+          </p>
+          <p class="mini">Адрес: <span id="addrText">Ереван, уточнить адрес/локацию завода</span></p>
+        </div>
+        <div class="card reveal">
+          <div class="map-embed">
+            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=44.43,40.11,44.62,40.22&layer=mapnik&marker=40.1772,44.5035"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> ООО «Метта Груп». Все права защищены.</p>
+      <p class="mini">Политика конфиденциальности • Пользовательское соглашение</p>
+    </div>
+  </footer>
+
+  <div class="floating-cta">
+    <a class="btn primary" href="#lead">Оставить заявку</a>
+    <a class="btn" href="tel:+374XXXXXXXXX">Позвонить</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
