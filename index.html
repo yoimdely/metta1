@@ -4,15 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Метта Груп — бетон, спецтехника и инертные материалы с доставкой</title>
-  <meta name="description" content="Бетон от 30 000 драм/м³. Аренда миксеров, насосов, кранов. Щебень и базальтовая пыль. Премиальная подача, быстрый отклик, доставка по всей Армении." />
+  <meta name="description" content="Бетон от 30 000 драм/м³. Аренда миксеров, насосов, кранов. Щебень и базальтовая пыль. Премиальный сервис и быстрая доставка по всей Армении." />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
   <meta property="og:title" content="Метта Груп — бетон и техника с доставкой" />
-  <meta property="og:description" content="Бетон от 30 000 ֏/м³, аренда техники, инертные материалы." />
+  <meta property="og:description" content="Бетон от 30 000 ֏/м³, аренда техники, инертные материалы." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="img/hero.jpg" />
+  <meta property="og:image" content="https://source.unsplash.com/1600x900/?concrete,construction" />
 </head>
 <body>
   <header class="header">
@@ -23,7 +26,8 @@
       </div>
       <nav class="nav-links">
         <a href="#services">Услуги</a>
-        <a href="#about">О компании</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#cases">Кейсы</a>
         <a href="#concrete">Бетон</a>
         <a href="#rent">Техника</a>
         <a href="#materials">Материалы</a>
@@ -36,217 +40,247 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container reveal">
-      <span class="kicker">🚚 Доставка день‑в‑день • 📍 По всей Армении</span>
-      <h1>Премиальный бетон и спецтехника<br>— быстро, выгодно, надёжно</h1>
-      <p class="lead">Прямые поставки с завода. Любые объёмы. Аренда миксеров, кранов и насосов. Инертные материалы: щебень и базальтовая пыль — всё в одном месте.</p>
+      <span class="kicker">🚚 Доставка день-в-день • 📍 По всей Армении</span>
+      <h1>Премиальный бетон и спецтехника — быстро, выгодно, надёжно</h1>
+      <p class="lead">Прямые поставки с завода. Любые объёмы. Аренда миксеров, кранов и насосов. Инертные материалы — щебень и базальтовая пыль — всё в одном месте.</p>
       <div class="hero-grid">
         <div>
           <div class="kpi">
             <div class="item">⏱ Срок от 24 часов</div>
-            <div class="item">🧱 Бетон от 30 000 ֏/м³</div>
-            <div class="item">🔧 Техника: миксер, насос, кран, самосвал</div>
-            <div class="item">🪨 Материалы: щебень, пыль</div>
+            <div class="item">🧱 Бетон от 30 000 ֏/м³</div>
+            <div class="item">🔧 Миксер, насос, кран, самосвал</div>
+            <div class="item">🪨 Щебень и базальтовая пыль</div>
           </div>
           <div class="stack" style="margin-top:14px">
             <a href="#lead" class="btn primary">Оставить заявку</a>
             <a href="#services" class="btn">Наши услуги</a>
           </div>
         </div>
-        <img src="img/hero.jpg" alt="Метта Груп — премиальная подача" class="hero-img">
+        <div class="img-frame">
+          <img alt="Метта Груп — премиальная подача"
+               src="https://source.unsplash.com/1200x800/?concrete,plant,factory">
+        </div>
       </div>
     </div>
   </section>
 
-  <main>
-    <section class="section" id="services">
-      <div class="container">
-        <h2 class="reveal">Наши услуги</h2>
-        <div class="grid cols-3">
-          <div class="card reveal">
-            <img src="img/atelier.jpg" alt="Бетон — все марки">
-            <h3>Продажа бетона</h3>
-            <p class="muted">Все марки, быстрая доставка на объект. Итоговая цена зависит от объёма.</p>
-            <p class="price">от 30 000 ֏/м³</p>
-            <button class="btn" onclick="prefillAndScroll('бетон')">Заказать бетон</button>
-          </div>
-          <div class="card reveal">
-            <img src="img/fleet.jpg" alt="Парк техники">
-            <h3>Аренда техники</h3>
-            <p class="muted">Миксер 10 м³, бетононасос, кран 25 т, самосвал 20 м³.</p>
-            <a href="#rent" class="btn">Смотреть ставки</a>
-          </div>
-          <div class="card reveal">
-            <img src="img/materials.jpg" alt="Инертные материалы">
-            <h3>Инертные материалы</h3>
-            <p class="muted">Щебень базальтовый и базальтовая пыль — с доставкой.</p>
-            <a href="#materials" class="btn">Прайс</a>
-          </div>
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="reveal">Наши услуги</h2>
+      <div class="grid cols-3">
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://source.unsplash.com/900x620/?concrete,industrial" alt="Бетон — все марки"></div>
+          <h3>Продажа бетона</h3>
+          <p class="muted">Все марки, быстрая доставка на объект. Итоговая цена зависит от объёма.</p>
+          <p class="price">от 30 000 ֏/м³</p>
+          <button class="btn" onclick="prefillAndScroll('бетон')">Заказать бетон</button>
+        </div>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://source.unsplash.com/900x620/?concrete,truck,mixer" alt="Парк техники"></div>
+          <h3>Аренда техники</h3>
+          <p class="muted">Миксер 10 м³, бетононасос, кран 25 т, самосвал 20 м³.</p>
+          <a href="#rent" class="btn">Смотреть ставки</a>
+        </div>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://source.unsplash.com/900x620/?gravel,quarry,aggregate" alt="Инертные материалы"></div>
+          <h3>Инертные материалы</h3>
+          <p class="muted">Щебень базальтовый, базальтовая пыль — с доставкой.</p>
+          <a href="#materials" class="btn">Прайс</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="reveal">О компании</h2>
-        <div class="grid cols-2">
-          <div class="card reveal">
-            <p class="quote">«Мы строим сервис вокруг скорости и надёжности — от первого звонка до закрытия объекта»</p>
-            <p>ООО «Метта Груп» — строительная компания: продаём бетон с доставкой, сдаём в аренду спецтехнику и поставляем инертные материалы по всей Армении. Ставим на скорость, честные условия и прозрачные цены.</p>
-            <ul class="muted">
-              <li>Доставка «день‑в‑день» по всей стране.</li>
-              <li>Удобные каналы связи: WhatsApp, Telegram и телефон.</li>
-              <li>Готово к рекламе: UTM, аналитика, SEO‑разметка.</li>
-            </ul>
-          </div>
-          <div class="card reveal">
-            <img src="img/team.jpg" alt="Команда Метта Груп">
-            <div class="grid cols-2" style="margin-top:12px">
-              <img src="img/work.jpg" alt="Объект">
-              <img src="img/clients.jpg" alt="Клиенты">
-            </div>
-          </div>
+  <!-- ADVANTAGES -->
+  <section class="section" id="advantages">
+    <div class="container">
+      <h2 class="reveal">Преимущества</h2>
+      <div class="grid cols-3">
+        <div class="card reveal">
+          <h3>Скорость и логистика</h3>
+          <p class="muted">Собственный парк техники и выстроенные маршруты — доставка «день-в-день» по всей Армении.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Честные цены</h3>
+          <p class="muted">Фиксируем стоимость до отгрузки. Калькулятор на сайте и прозрачная смета.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Качество состава</h3>
+          <p class="muted">Марки по ГОСТ/ТУ, стабильная рецептура, контроль на каждом этапе.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="concrete">
-      <div class="container">
-        <h2 class="reveal">Продажа бетона</h2>
-        <div class="grid cols-2">
-          <div class="card reveal">
-            <h3>Калькулятор стоимости</h3>
-            <div class="two">
-              <label>Марка
-                <select id="grade">
-                  <option>M100</option><option>M150</option><option>M200</option><option>M250</option><option>M300</option><option>M350</option><option>M400</option>
-                </select>
-              </label>
-              <label>Объём, м³
-                <input id="volume" type="number" inputmode="decimal" min="1" step="0.5" value="5" />
-              </label>
-            </div>
-            <div class="card" style="background:#faf9f6;margin-top:10px">
-              <div class="mini muted">Базовая цена за м³</div>
-              <div id="pricePer" class="price">30 000 ֏/м³</div>
-              <div class="mini muted">Итого ≈</div>
-              <div id="total" style="font-size:28px;font-weight:900">150 000 ֏</div>
-            </div>
-            <div class="stack" style="margin-top:10px">
-              <button class="btn primary" onclick="prefillAndScroll('бетон')">Заказать бетон</button>
-              <button class="btn" onclick="navigator.clipboard.writeText('Расчёт скопирован');">Скопировать расчёт</button>
-            </div>
-            <div class="mini muted">* Калькулятор носит справочный характер. Уточняйте точную стоимость у менеджера.</div>
-          </div>
-          <div class="card reveal">
-            <img src="img/mixer.jpg" alt="Миксер 10 м³">
-            <div class="grid cols-2" style="margin-top:12px">
-              <img src="img/pump.jpg" alt="Бетононасос">
-              <img src="img/dump.jpg" alt="Самосвал 20 м³">
-            </div>
-          </div>
+  <!-- CASES -->
+  <section class="section" id="cases">
+    <div class="container">
+      <h2 class="reveal">Кейсы</h2>
+      <div class="grid cols-3">
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://source.unsplash.com/900x620/?construction,site" alt="Объект: Жилой комплекс"></div>
+          <h3>Жилой комплекс</h3>
+          <p class="muted">Поставка 2 400 м³ бетона М300, кран 25 т, самосвалы 20 м³.</p>
+        </div>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://source.unsplash.com/900x620/?bridge,construction" alt="Объект: Путепровод"></div>
+          <h3>Путепровод</h3>
+          <p class="muted">Бетононасос + миксер, точечные поставки по графику в ночное окно.</p>
+        </div>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://source.unsplash.com/900x620/?warehouse,construction" alt="Объект: Складской комплекс"></div>
+          <h3>Складской комплекс</h3>
+          <p class="muted">Промышленная стяжка, базальтовая пыль и щебень, доставка «точно ко времени».</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="rent">
-      <div class="container">
-        <h2 class="reveal">Аренда спецтехники</h2>
-        <table class="table reveal">
-          <thead><tr><th>Техника</th><th>Ставка</th><th></th></tr></thead>
-          <tbody>
-            <tr><td>Миксер (10 м³)</td><td>25 000 ֏ / рейс</td><td><button class="btn" onclick="prefillAndScroll('аренда миксера')">Забронировать</button></td></tr>
-            <tr><td>Бетононасос</td><td>2 500 ֏/м³ (мин. 80 000 ֏)</td><td><button class="btn" onclick="prefillAndScroll('бетононасос')">Забронировать</button></td></tr>
-            <tr><td>Кран 25 т</td><td>120 000 ֏ / день</td><td><button class="btn" onclick="prefillAndScroll('кран 25 т')">Забронировать</button></td></tr>
-            <tr><td>Самосвал 20 м³</td><td>30 000 ֏ / рейс</td><td><button class="btn" onclick="prefillAndScroll('самосвал 20 м³')">Забронировать</button></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section" id="materials">
-      <div class="container">
-        <h2 class="reveal">Инертные материалы</h2>
-        <table class="table reveal">
-          <thead><tr><th>Материал</th><th>Цена</th><th></th></tr></thead>
-          <tbody>
-            <tr><td>Щебень базальтовый</td><td>5 400 ֏/м³</td><td><button class="btn" onclick="prefillAndScroll('щебень базальт')">Заказать</button></td></tr>
-            <tr><td>Базальтовая пыль</td><td>4 500 ֏/м³</td><td><button class="btn" onclick="prefillAndScroll('базальтовая пыль')">Заказать</button></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section" id="lead">
-      <div class="container">
-        <h2 class="reveal">Оставьте заявку</h2>
-        <p class="muted">Выберите удобный способ — WhatsApp, Telegram или звонок.</p>
-        <form id="leadForm" onsubmit="event.preventDefault();" class="reveal">
+  <!-- CONCRETE + CALC -->
+  <section class="section" id="concrete">
+    <div class="container">
+      <h2 class="reveal">Продажа бетона</h2>
+      <div class="grid cols-2">
+        <div class="card reveal">
+          <h3>Калькулятор стоимости</h3>
           <div class="two">
-            <label>Имя
-              <input id="fName" placeholder="Ваше имя" />
-            </label>
-            <label>Телефон
-              <input id="fPhone" placeholder="+374 …" />
-            </label>
-          </div>
-          <div class="two">
-            <label>Услуга
-              <select id="fService">
-                <option value="бетон">Бетон</option>
-                <option value="аренда миксера">Аренда миксера</option>
-                <option value="бетононасос">Бетононасос</option>
-                <option value="кран 25 т">Кран 25 т</option>
-                <option value="самосвал 20 м³">Самосвал 20 м³</option>
-                <option value="щебень базальт">Щебень базальт</option>
-                <option value="базальтовая пыль">Базальтовая пыль</option>
+            <label>Марка
+              <select id="grade">
+                <option>M100</option><option>M150</option><option>M200</option>
+                <option>M250</option><option>M300</option><option>M350</option><option>M400</option>
               </select>
             </label>
-            <label>Кол-во/объём
-              <input id="fQty" placeholder="например, 10 м³" />
+            <label>Объём, м³
+              <input id="volume" type="number" inputmode="decimal" min="1" step="0.5" value="5" />
             </label>
           </div>
-          <label>Адрес доставки/объекта
-            <input id="fAddress" placeholder="Город, улица, ориентир" />
-          </label>
-          <label>Комментарий
-            <textarea id="fNote" placeholder="Удобное время, марка бетона, детали"></textarea>
-          </label>
-          <div class="stack">
-            <button type="button" class="btn primary" onclick="sendWhatsApp()">Отправить в WhatsApp</button>
-            <button type="button" class="btn" onclick="sendTelegram()">Отправить в Telegram</button>
-            <a class="btn" id="telText" href="tel:+374XXXXXXXXX">Позвонить</a>
+          <div class="card soft">
+            <div class="mini muted">Базовая цена за м³</div>
+            <div id="pricePer" class="price">30 000 ֏/м³</div>
+            <div class="mini muted">Итого ≈</div>
+            <div id="total" class="grand">150 000 ֏</div>
           </div>
-          <div class="mini">Нажимая кнопки, вы соглашаетесь с обработкой данных. UTM‑метки автоматически прикрепятся к сообщению.</div>
-        </form>
-      </div>
-    </section>
-
-    <section class="section" id="contacts">
-      <div class="container">
-        <h2 class="reveal">Контакты</h2>
-        <div class="grid cols-2">
-          <div class="card reveal">
-            <p><strong>ООО «Метта Груп»</strong></p>
-            <p class="muted">Строительство, продажа бетона, аренда спецтехники, инертные материалы.</p>
-            <p>Тел.: <a id="telText2" href="tel:+374XXXXXXXXX">+374 XX XXX XX XX</a></p>
-            <p class="stack">
-              <a id="waLink" class="btn" href="#">WhatsApp</a>
-              <a id="tgLink" class="btn" href="#">Telegram</a>
-            </p>
-            <p class="mini">Адрес: <span id="addrText">Ереван, уточнить адрес/локацию завода</span></p>
+          <div class="stack" style="margin-top:10px">
+            <button class="btn primary" onclick="prefillAndScroll('бетон')">Заказать бетон</button>
+            <button class="btn" onclick="navigator.clipboard.writeText('Расчёт скопирован');">Скопировать расчёт</button>
           </div>
-          <div class="card reveal">
-            <div class="map-embed">
-              <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=44.43,40.11,44.62,40.22&layer=mapnik&marker=40.1772,44.5035"></iframe>
-            </div>
+          <div class="mini muted">* Калькулятор носит справочный характер. Уточняйте точную стоимость у менеджера.</div>
+        </div>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://source.unsplash.com/1200x800/?concrete,pump" alt="Бетононасос"></div>
+          <div class="grid cols-2" style="margin-top:12px">
+            <div class="img-frame"><img src="https://source.unsplash.com/800x550/?crane,construction" alt="Кран 25 т"></div>
+            <div class="img-frame"><img src="https://source.unsplash.com/800x550/?dump,truck" alt="Самосвал 20 м³"></div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- RENT -->
+  <section class="section" id="rent">
+    <div class="container">
+      <h2 class="reveal">Аренда спецтехники</h2>
+      <table class="table reveal">
+        <thead><tr><th>Техника</th><th>Ставка</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Миксер (10 м³)</td><td>25 000 ֏ / рейс</td><td><button class="btn" onclick="prefillAndScroll('аренда миксера')">Забронировать</button></td></tr>
+          <tr><td>Бетононасос</td><td>2 500 ֏/м³ (мин. 80 000 ֏)</td><td><button class="btn" onclick="prefillAndScroll('бетононасос')">Забронировать</button></td></tr>
+          <tr><td>Кран 25 т</td><td>120 000 ֏ / день</td><td><button class="btn" onclick="prefillAndScroll('кран 25 т')">Забронировать</button></td></tr>
+          <tr><td>Самосвал 20 м³</td><td>30 000 ֏ / рейс</td><td><button class="btn" onclick="prefillAndScroll('самосвал 20 м³')">Забронировать</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section class="section" id="materials">
+    <div class="container">
+      <h2 class="reveal">Инертные материалы</h2>
+      <table class="table reveal">
+        <thead><tr><th>Материал</th><th>Цена</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Щебень базальтовый</td><td>5 400 ֏/м³</td><td><button class="btn" onclick="prefillAndScroll('щебень базальт')">Заказать</button></td></tr>
+          <tr><td>Базальтовая пыль</td><td>4 500 ֏/м³</td><td><button class="btn" onclick="prefillAndScroll('базальтовая пыль')">Заказать</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- LEAD -->
+  <section class="section" id="lead">
+    <div class="container">
+      <h2 class="reveal">Оставьте заявку</h2>
+      <p class="muted">Выберите удобный способ — WhatsApp, Telegram или звонок.</p>
+      <form id="leadForm" onsubmit="event.preventDefault();" class="reveal">
+        <div class="two">
+          <label>Имя
+            <input id="fName" placeholder="Ваше имя" />
+          </label>
+          <label>Телефон
+            <input id="fPhone" placeholder="+374 …" />
+          </label>
+        </div>
+        <div class="two">
+          <label>Услуга
+            <select id="fService">
+              <option value="бетон">Бетон</option>
+              <option value="аренда миксера">Аренда миксера</option>
+              <option value="бетононасос">Бетононасос</option>
+              <option value="кран 25 т">Кран 25 т</option>
+              <option value="самосвал 20 м³">Самосвал 20 м³</option>
+              <option value="щебень базальт">Щебень базальт</option>
+              <option value="базальтовая пыль">Базальтовая пыль</option>
+            </select>
+          </label>
+          <label>Кол-во/объём
+            <input id="fQty" placeholder="например, 10 м³" />
+          </label>
+        </div>
+        <label>Адрес доставки/объекта
+          <input id="fAddress" placeholder="Город, улица, ориентир" />
+        </label>
+        <label>Комментарий
+          <textarea id="fNote" placeholder="Удобное время, марка бетона, детали"></textarea>
+        </label>
+        <div class="stack">
+          <button type="button" class="btn primary" onclick="sendWhatsApp()">Отправить в WhatsApp</button>
+          <button type="button" class="btn" onclick="sendTelegram()">Отправить в Telegram</button>
+          <a class="btn" id="telText" href="tel:+374XXXXXXXXX">Позвонить</a>
+        </div>
+        <div class="mini">Нажимая кнопки, вы соглашаетесь с обработкой данных. UTM-метки автоматически прикрепятся к сообщению.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <h2 class="reveal">Контакты</h2>
+      <div class="grid cols-2">
+        <div class="card reveal">
+          <p><strong>ООО «Метта Груп»</strong></p>
+          <p class="muted">Строительство, продажа бетона, аренда спецтехники, инертные материалы.</p>
+          <p>Тел.: <a id="telText2" href="tel:+374XXXXXXXXX">+374 XX XXX XX XX</a></p>
+          <p class="stack">
+            <a id="waLink" class="btn" href="#">WhatsApp</a>
+            <a id="tgLink" class="btn" href="#">Telegram</a>
+          </p>
+          <p class="mini">Адрес: <span id="addrText">Ереван, уточнить адрес/локацию завода</span></p>
+        </div>
+        <div class="card reveal">
+          <div class="map-embed">
+            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=44.43,40.11,44.62,40.22&layer=mapnik&marker=40.1772,44.5035"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
