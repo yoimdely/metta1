@@ -16,26 +16,29 @@ const $ = (s,scope=document)=>scope.querySelector(s);
 const $$ = (s,scope=document)=>scope.querySelectorAll(s);
 
 function setContacts(){
-  $('#callTop').href = `tel:${COMPANY.phoneE164}`;
-  $('#telTop').textContent = COMPANY.phoneDisplay;
-  $('#telText').href = `tel:${COMPANY.phoneE164}`;
-  $('#telText').textContent = COMPANY.phoneDisplay;
-  $('#waLink').href = `https://wa.me/${COMPANY.whatsapp}`;
-  $('#tgLink').href = `https://t.me/${COMPANY.telegram}`;
-  $('#addrText').textContent = COMPANY.addressText;
-  $('#year').textContent = new Date().getFullYear();
+  const t = COMPANY;
+  const telEls = ['#callTop','#telText','#telText2'].map(sel => $(sel)).filter(Boolean);
+  telEls.forEach(el => { if(el.tagName==='A'){ el.href = `tel:${t.phoneE164}`; } });
+  const telTop = $('#telTop'); if(telTop) telTop.textContent = t.phoneDisplay;
+  const telText = $('#telText'); if(telText) telText.textContent = t.phoneDisplay;
+  const wa = $('#waLink'); if(wa) wa.href = `https://wa.me/${t.whatsapp}`;
+  const tg = $('#tgLink'); if(tg) tg.href = `https://t.me/${t.telegram}`;
+  const addr = $('#addrText'); if(addr) addr.textContent = t.addressText;
+  const year = $('#year'); if(year) year.textContent = new Date().getFullYear();
 }
+
 function updateCalc(){
   const volume = parseFloat($('#volume')?.value || '0');
   const pricePer = PRICES.concreteBase;
+  const total = Math.round(pricePer * volume);
   if($('#pricePer')) $('#pricePer').textContent = `${nf.format(pricePer)} ֏/м³`;
-  if($('#total')) $('#total').textContent = `${nf.format(Math.round(pricePer * volume))} ֏`;
+  if($('#total')) $('#total').textContent = `${nf.format(total)} ֏`;
+  return {volume,total};
 }
 function prefillAndScroll(service){
-  const volume = parseFloat($('#volume')?.value || '0');
-  const total = Math.round(PRICES.concreteBase * volume);
-  if($('#fService')) $('#fService').value = service;
-  if(service==='бетон' && $('#fQty')) $('#fQty').value = `${volume} м³ (≈ ${nf.format(total)} ֏)`;
+  const {volume,total} = updateCalc();
+  const s = $('#fService'); if(s) s.value = service;
+  const q = $('#fQty'); if(service==='бетон' && q) q.value = `${volume} м³ (≈ ${nf.format(total)} ֏)`;
   $('#lead')?.scrollIntoView({behavior:'smooth'});
 }
 function buildMessage(){
@@ -59,10 +62,12 @@ function sendTelegram(){
   else{ url = `https://t.me/share/url?url=&text=${msg}`; }
   window.open(url,'_blank');
 }
+
 function setupReveal(){
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; if(reduce) return;
   const targets = [...$$('.reveal')];
   const io = new IntersectionObserver((es)=>{ es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } }); },{threshold:.14, rootMargin:'0px 0px -10% 0px'});
   targets.forEach(el=>io.observe(el));
 }
+
 document.addEventListener('DOMContentLoaded', ()=>{ setContacts(); updateCalc(); setupReveal(); });
