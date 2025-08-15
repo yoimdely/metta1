@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Метта Груп — бетон, спецтехника и инертные материалы с доставкой</title>
-  <meta name="description" content="Бетон от 30 000 драм/м³. Аренда миксеров, насосов, кранов. Щебень и базальтовая пыль. Премиальный сервис и быстрая доставка по всей Армении." />
-
+  <title>Метта Груп — бетон, спецтехника и материалы с доставкой по всей Армении</title>
+  <meta name="description" content="Бетон от 30 000 ֏/м³. Доставка день-в-день. Аренда миксеров, насосов, кранов. Щебень и базальтовая пыль. Заявка за 30 секунд.">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
-  <meta property="og:title" content="Метта Груп — бетон и техника с доставкой" />
-  <meta property="og:description" content="Бетон от 30 000 ֏/м³, аренда техники, инертные материалы." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1581090462747-1c4b2a3a5d0d?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:title" content="Метта Груп — бетон и техника с доставкой">
+  <meta property="og:description" content="Бетон от 30 000 ֏/м³ • Доставка день-в-день • Аренда техники • Заявка за 30 секунд">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1600&auto=format&fit=crop">
 </head>
 <body>
-  <!-- HEADER (минимал) -->
+  <!-- Минимальная шапка: бренд + телефон + 1 CTA -->
   <header class="header">
     <div class="container nav">
       <a class="brand" href="#">
@@ -32,37 +30,35 @@
     </div>
   </header>
 
-  <!-- HERO c формой -->
+  <!-- ГЕРОЙ: сильный оффер + короткая форма + соц.доказательства -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy reveal">
         <span class="kicker">🚚 Доставка день-в-день • 📍 По всей Армении</span>
-        <h1>Премиальный бетон и спецтехника — быстро, выгодно, надёжно</h1>
-        <p class="lead">Поставки с завода. Любые объёмы. Миксеры, насосы, кран 25 т и самосвалы. Щебень и базальтовая пыль — всё в одном месте.</p>
+        <h1>Бетон с доставкой и спецтехника —<br> быстро. честно. по делу.</h1>
+        <p class="lead">От завода до объекта: марки от M100 до M400, миксеры/насосы/кран 25 т, щебень и базальтовая пыль. Оформление за 30 секунд в мессенджере.</p>
+
+        <div class="trust">
+          <div class="stars">★★★★★</div>
+          <div class="trust-note">Рейтинг 4.9 / 5 • 300+ объектов</div>
+          <div class="logos mini">Клиенты: <span class="logo-dot"></span><span class="logo-dot"></span><span class="logo-dot"></span><span class="logo-dot"></span></div>
+        </div>
+
         <div class="kpi">
-          <span class="chip">⏱ от 24 часов</span>
+          <span class="chip">⏱ Выезд от 24 часов</span>
           <span class="chip">🧱 от 30 000 ֏/м³</span>
           <span class="chip">🔧 миксер • насос • кран</span>
-          <span class="chip">🪨 щебень • пыль</span>
-        </div>
-        <div class="hero-img tilt">
-          <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1400&auto=format&fit=crop"
-               alt="Бетонный завод и доставка">
+          <span class="chip">🪨 щебень • базальтовая пыль</span>
         </div>
       </div>
 
-      <!-- Приоритетная форма -->
+      <!-- Приоритетная короткая форма -->
       <form id="lead" class="lead-form elevate reveal" onsubmit="event.preventDefault(); sendWhatsApp();">
         <h2>Заявка за 30 секунд</h2>
-        <div class="two">
-          <label>Имя
-            <input id="fName" placeholder="Ваше имя" />
-          </label>
-          <label>Телефон
-            <input id="fPhone" placeholder="+374 …" />
-          </label>
-        </div>
-        <label>Услуга
+        <label>Телефон
+          <input id="fPhone" placeholder="+374 …" required />
+        </label>
+        <label>Что нужно
           <select id="fService">
             <option value="бетон">Бетон</option>
             <option value="аренда миксера">Аренда миксера</option>
@@ -73,28 +69,20 @@
             <option value="базальтовая пыль">Базальтовая пыль</option>
           </select>
         </label>
-        <div class="two">
-          <label>Кол-во/объём
-            <input id="fQty" placeholder="например, 10 м³" />
-          </label>
-          <label>Адрес/локация
-            <input id="fAddress" placeholder="Город, улица, ориентир" />
-          </label>
-        </div>
-        <label>Комментарий
-          <textarea id="fNote" placeholder="Удобное время, марка бетона, детали"></textarea>
-        </label>
-        <div class="stack">
-          <button type="submit" class="btn primary">Отправить в WhatsApp</button>
-          <button type="button" class="btn" onclick="sendTelegram()">Отправить в Telegram</button>
-          <a class="btn ghost" id="ctaCall" href="tel:+374XXXXXXXXX">Позвонить</a>
-        </div>
+        <button type="submit" class="btn primary huge">Отправить в WhatsApp</button>
+        <button type="button" class="btn ghost" onclick="sendTelegram()">или Telegram</button>
+        <p class="mini">Или позвоните: <a id="ctaCall" href="tel:+374XXXXXXXXX">+374 XX XXX XX XX</a></p>
         <p class="mini">UTM-метки из рекламы прикрепятся автоматически.</p>
       </form>
+
+      <!-- Один и тот же фиксированный сток (единый визуал) -->
+      <div class="hero-art tilt reveal">
+        <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1400&auto=format&fit=crop" alt="Бетонный завод и доставка">
+      </div>
     </div>
   </section>
 
-  <!-- Услуги -->
+  <!-- Услуги (все изображения — фиксированные ID, одинаковый стиль) -->
   <section class="section" id="services">
     <div class="container">
       <h2 class="reveal">Наши услуги</h2>
@@ -104,17 +92,17 @@
             <img src="https://images.unsplash.com/photo-1603052875335-6a0a5d7d1a5e?q=80&w=1200&auto=format&fit=crop" alt="Бетон — все марки">
           </div>
           <h3>Продажа бетона</h3>
-          <p class="muted">Все марки, оперативная доставка на объект. Цена зависит от объёма.</p>
+          <p class="muted">Все марки, доставка на объект. Цена зависит от объёма.</p>
           <p class="price">от 30 000 ֏/м³</p>
-          <button class="btn" onclick="prefillAndScroll('бетон')">Заказать бетон</button>
+          <button class="btn" onclick="prefillAndScroll('бетон')">Заказать</button>
         </div>
         <div class="card elevate reveal">
           <div class="img-frame">
-            <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=1200&auto=format&fit=crop" alt="Парк техники">
+            <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=1200&auto=format&fit=crop" alt="Миксер/техника">
           </div>
           <h3>Аренда техники</h3>
-          <p class="muted">Миксер 10 м³, бетононасос, кран 25 т, самосвал 20 м³.</p>
-          <a href="#rent" class="btn">Смотреть ставки</a>
+          <p class="muted">Миксер 10 м³, насос, кран 25 т, самосвал 20 м³.</p>
+          <a href="#rent" class="btn">Ставки</a>
         </div>
         <div class="card elevate reveal">
           <div class="img-frame">
@@ -128,61 +116,31 @@
     </div>
   </section>
 
-  <!-- Преимущества -->
-  <section class="section" id="advantages">
-    <div class="container">
-      <h2 class="reveal">Почему мы</h2>
-      <div class="grid cols-3">
-        <div class="card reveal">
-          <h3>Скорость</h3>
-          <p class="muted">Собственный транспорт и выстроенная логистика — «день-в-день».</p>
-        </div>
-        <div class="card reveal">
-          <h3>Прозрачность</h3>
-          <p class="muted">Фиксируем условия до отгрузки. Калькулятор и смета без сюрпризов.</p>
-        </div>
-        <div class="card reveal">
-          <h3>Качество</h3>
-          <p class="muted">Марки по ГОСТ/ТУ, контроль состава и температуры смеси.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Кейсы -->
+  <!-- Кейсы (три карточки — те же стабильные стоки) -->
   <section class="section" id="cases">
     <div class="container">
       <h2 class="reveal">Кейсы</h2>
       <div class="grid cols-3">
-        <div class="case card elevate reveal">
-          <div class="img-frame">
-            <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1200&auto=format&fit=crop" alt="Жилой комплекс">
-          </div>
-          <div class="case-meta"><span>2 400 м³</span> • <span>М300</span> • <span>кран 25 т</span></div>
-          <h3>Жилой комплекс</h3>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1200&auto=format&fit=crop" alt="Жилой комплекс"></div>
+          <h3>Жилой комплекс</h3><p class="muted">2 400 м³ М300 • кран 25 т</p>
         </div>
-        <div class="case card elevate reveal">
-          <div class="img-frame">
-            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop" alt="Путепровод">
-          </div>
-          <div class="case-meta"><span>ночные окна</span> • <span>насос</span> • <span>миксер</span></div>
-          <h3>Путепровод</h3>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop" alt="Путепровод"></div>
+          <h3>Путепровод</h3><p class="muted">Ночные окна • насос + миксер</p>
         </div>
-        <div class="case card elevate reveal">
-          <div class="img-frame">
-            <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1200&auto=format&fit=crop" alt="Складской комплекс">
-          </div>
-          <div class="case-meta"><span>промстяжка</span> • <span>щебень</span> • <span>пыль</span></div>
-          <h3>Складской комплекс</h3>
+        <div class="card reveal">
+          <div class="img-frame"><img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1200&auto=format&fit=crop" alt="Складской комплекс"></div>
+          <h3>Складской комплекс</h3><p class="muted">Щебень/пыль • «точно ко времени»</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Бетон + калькулятор -->
+  <!-- Секция с калькулятором и техникой -->
   <section class="section" id="concrete">
     <div class="container">
-      <h2 class="reveal">Продажа бетона</h2>
+      <h2 class="reveal">Бетон и техника</h2>
       <div class="grid cols-2">
         <div class="card reveal">
           <h3>Калькулятор</h3>
@@ -205,96 +163,4 @@
           </div>
           <div class="stack">
             <button class="btn primary" onclick="prefillAndScroll('бетон')">Заказать</button>
-            <button class="btn" onclick="navigator.clipboard.writeText('Расчёт скопирован')">Скопировать расчёт</button>
-          </div>
-          <p class="mini">* Калькулятор справочный. Точную цену подтвердит менеджер.</p>
-        </div>
-        <div class="card reveal">
-          <div class="img-frame">
-            <img src="https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=1200&auto=format&fit=crop" alt="Бетононасос">
-          </div>
-          <div class="grid cols-2" style="margin-top:12px">
-            <div class="img-frame">
-              <img src="https://images.unsplash.com/photo-1621905252491-72a5fc80b9a2?q=80&w=1200&auto=format&fit=crop" alt="Кран 25 т">
-            </div>
-            <div class="img-frame">
-              <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?q=80&w=1200&auto=format&fit=crop" alt="Самосвал 20 м³">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Аренда -->
-  <section class="section" id="rent">
-    <div class="container">
-      <h2 class="reveal">Аренда спецтехники</h2>
-      <table class="table reveal">
-        <thead><tr><th>Техника</th><th>Ставка</th><th></th></tr></thead>
-        <tbody>
-          <tr><td>Миксер (10 м³)</td><td>25 000 ֏ / рейс</td><td><button class="btn" onclick="prefillAndScroll('аренда миксера')">Забронировать</button></td></tr>
-          <tr><td>Бетононасос</td><td>2 500 ֏/м³ (мин. 80 000 ֏)</td><td><button class="btn" onclick="prefillAndScroll('бетононасос')">Забронировать</button></td></tr>
-          <tr><td>Кран 25 т</td><td>120 000 ֏ / день</td><td><button class="btn" onclick="prefillAndScroll('кран 25 т')">Забронировать</button></td></tr>
-          <tr><td>Самосвал 20 м³</td><td>30 000 ֏ / рейс</td><td><button class="btn" onclick="prefillAndScroll('самосвал 20 м³')">Забронировать</button></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Материалы -->
-  <section class="section" id="materials">
-    <div class="container">
-      <h2 class="reveal">Инертные материалы</h2>
-      <table class="table reveal">
-        <thead><tr><th>Материал</th><th>Цена</th><th></th></tr></thead>
-        <tbody>
-          <tr><td>Щебень базальтовый</td><td>5 400 ֏/м³</td><td><button class="btn" onclick="prefillAndScroll('щебень базальт')">Заказать</button></td></tr>
-          <tr><td>Базальтовая пыль</td><td>4 500 ֏/м³</td><td><button class="btn" onclick="prefillAndScroll('базальтовая пыль')">Заказать</button></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Контакты -->
-  <section class="section" id="contacts">
-    <div class="container">
-      <h2 class="reveal">Контакты</h2>
-      <div class="grid cols-2">
-        <div class="card reveal">
-          <p><strong>ООО «Метта Груп»</strong></p>
-          <p class="muted">Строительство, продажа бетона, аренда спецтехники, инертные материалы.</p>
-          <p>Тел.: <a id="telText2" href="tel:+374XXXXXXXXX">+374 XX XXX XX XX</a></p>
-          <p class="stack">
-            <a id="waLink" class="btn" href="#">WhatsApp</a>
-            <a id="tgLink" class="btn" href="#">Telegram</a>
-          </p>
-          <p class="mini">Адрес: <span id="addrText">Ереван, уточнить адрес/локацию завода</span></p>
-        </div>
-        <div class="card reveal">
-          <div class="map-embed">
-            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=44.43,40.11,44.62,40.22&layer=mapnik&marker=40.1772,44.5035"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> ООО «Метта Груп». Все права защищены.</p>
-      <p class="mini">Политика конфиденциальности • Пользовательское соглашение</p>
-    </div>
-  </footer>
-
-  <!-- Мобильный фикс-CTA -->
-  <div class="floating-cta">
-    <a class="btn primary" href="#lead">Оставить заявку</a>
-    <a class="btn" href="tel:+374XXXXXXXXX">Позвонить</a>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+            <button class="btn" onclick="navigator.clipboard.writeText('Расчёт скопирован')">Скопир
